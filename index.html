@@ -7,7 +7,7 @@
   <title>韩地核对 | Naver Map 地点助手</title>
   <style>
     :root{--bg:#f4f0e8;--paper:#fffdf8;--ink:#17211d;--muted:#6d746d;--line:#d9d8cf;--green:#176b55;--green-2:#dceee6;--coral:#bd5d42;--coral-2:#f8e4dc;--amber:#a66a18;--amber-2:#f7ebca;--shadow:0 14px 40px rgba(29,42,35,.08);font-family:Inter,"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55}button,input,textarea{font:inherit}button{cursor:pointer}.shell{width:min(1120px,calc(100% - 32px));margin:0 auto;padding:28px 0 56px}.topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:30px}.brand{display:flex;gap:13px;align-items:center}.mark{width:42px;height:42px;border-radius:12px;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800;letter-spacing:-.06em}.eyebrow{margin:0 0 4px;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--green)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(26px,4vw,42px);line-height:1.12;letter-spacing:-.02em;margin-bottom:9px}.subtitle{max-width:630px;margin:0;color:var(--muted);font-size:15px}.status{font-size:12px;color:var(--muted);padding-top:8px;white-space:nowrap}.grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(330px,.96fr);gap:18px;align-items:start}.panel{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:17px}.panel h2{font-size:19px;line-height:1.25;margin:0}.panel h3{font-size:14px;margin:0 0 8px}.step{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:12px}.step b{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-size:12px}.field-label{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px;font-weight:700;margin:0 0 7px}.hint{font-size:12px;color:var(--muted);margin:7px 0 0}.textarea{width:100%;min-height:220px;resize:vertical;border:1px solid var(--line);border-radius:11px;background:#fff;padding:14px;color:var(--ink);outline:none}.textarea:focus,input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(23,107,85,.12)}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.btn{border:0;border-radius:9px;padding:10px 14px;font-weight:750;font-size:13px;transition:transform .12s,background .12s}.btn:active{transform:translateY(1px)}.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:#0e5945}.btn-soft{background:var(--green-2);color:var(--green)}.btn-light{background:#f1f0ea;color:var(--ink)}.btn-danger{background:var(--coral-2);color:var(--coral)}.btn:disabled{opacity:.45;cursor:not-allowed}.divider{height:1px;background:var(--line);margin:22px 0}.dropzone{border:1.5px dashed #aeb9af;border-radius:12px;padding:18px;text-align:center;background:#fbfcf8;transition:border-color .15s,background .15s}.dropzone.over{border-color:var(--green);background:var(--green-2)}.dropzone strong{display:block;font-size:13px}.dropzone span{display:block;color:var(--muted);font-size:12px;margin:4px 0 12px}.dropzone input{display:none}.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.preview{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#f1f1ed;aspect-ratio:4/3}.preview img{display:block;width:100%;height:100%;object-fit:cover}.preview figcaption{position:absolute;left:7px;bottom:7px;padding:3px 7px;border-radius:5px;background:rgba(23,33,29,.78);color:#fff;font-size:11px}.empty{display:grid;place-items:center;color:var(--muted);font-size:12px;min-height:130px;border:1px dashed var(--line);border-radius:10px;padding:12px;text-align:center}.extract{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.chip{padding:5px 8px;border-radius:6px;background:#f1f0ea;color:#46534b;font-size:12px}.chip b{color:var(--ink);margin-right:3px}.results{display:grid;gap:11px}.result{border:1px solid var(--line);border-radius:11px;padding:14px;background:#fff}.result.recommended{border-color:#a6cdbd;box-shadow:inset 3px 0 var(--green)}.result-title{display:flex;justify-content:space-between;gap:10px;align-items:start}.result-title strong{font-size:15px}.badge{border-radius:999px;padding:3px 7px;font-size:11px;font-weight:800;white-space:nowrap}.badge.high{color:var(--green);background:var(--green-2)}.badge.mid{color:var(--amber);background:var(--amber-2)}.badge.low{color:var(--coral);background:var(--coral-2)}.result p{margin:7px 0;color:var(--muted);font-size:12px}.result-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.result-actions .btn{font-size:12px;padding:8px 10px}.compare{margin-top:18px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.input{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;background:#fff;color:var(--ink);outline:none}.wide{grid-column:1/-1}.report{margin-top:13px;border-radius:10px;padding:12px;font-size:13px}.report.good{background:var(--green-2);color:#14513f}.report.warn{background:var(--amber-2);color:#795010}.report.neutral{background:#f1f0ea;color:#5f655f}.report ul{margin:7px 0 0 18px;padding:0}.saved{margin-top:18px}.saved-list{display:grid;gap:8px}.saved-item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 11px;background:#f7f6f0;border-radius:9px;font-size:12px}.saved-item span{color:var(--muted)}.mini-btn{border:0;background:transparent;color:var(--coral);font-weight:700;font-size:12px}.btn-big{width:100%;margin-top:10px;padding:13px;font-size:15px}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);max-width:90vw;background:#17211d;color:#fff;padding:10px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}.toast.show{opacity:1}.fields{margin-top:12px;border:1px solid var(--line);border-radius:10px;background:#fff}.fields summary{padding:10px 12px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer}.fields-body{padding:0 12px 12px}.chip.missing{background:transparent;border:1px dashed var(--line);color:var(--muted)}.tip{margin-top:11px;padding:11px 12px;border-radius:10px;background:var(--green-2);color:#14513f;font-size:12px}.tip b{font-size:13px}.howto{margin-top:11px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:12px}.howto summary{padding:11px 12px;font-weight:750;font-size:13px;cursor:pointer;color:var(--green)}.howto[open] summary{border-bottom:1px solid var(--line)}.howto h4{margin:12px 12px 5px;font-size:12px}.howto ul,.howto ol{margin:0 12px 0 30px;padding:0;color:#46534b}.howto li{margin:3px 0}.howto .warn-line{margin:7px 12px 0;color:var(--coral)}.glossary{display:flex;flex-wrap:wrap;gap:6px;margin:0 12px 13px}.glossary span{padding:4px 7px;border-radius:6px;background:#f1f0ea;color:#46534b}.glossary b{color:var(--ink);margin-right:4px}.note{padding:11px 12px;border-left:3px solid var(--coral);background:var(--coral-2);color:#754233;font-size:12px;border-radius:0 8px 8px 0}.footer{margin-top:19px;text-align:center;color:var(--muted);font-size:11px}@media(max-width:800px){.shell{width:min(100% - 22px,600px);padding-top:19px}.topbar{margin-bottom:22px}.status{display:none}.grid{grid-template-columns:1fr}.panel{padding:17px}.textarea{min-height:180px}.compare-grid{grid-template-columns:1fr}.wide{grid-column:auto}.preview-grid{grid-template-columns:1fr 1fr}}@media(max-width:420px){.topbar{display:block}.brand{align-items:flex-start}.actions .btn{flex:1}.preview-grid{grid-template-columns:1fr}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55}button,input,textarea{font:inherit}button{cursor:pointer}.shell{width:min(1120px,calc(100% - 32px));margin:0 auto;padding:28px 0 56px}.topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:30px}.brand{display:flex;gap:13px;align-items:center}.mark{width:42px;height:42px;border-radius:12px;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800;letter-spacing:-.06em}.eyebrow{margin:0 0 4px;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--green)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(26px,4vw,42px);line-height:1.12;letter-spacing:-.02em;margin-bottom:9px}.subtitle{max-width:630px;margin:0;color:var(--muted);font-size:15px}.status{font-size:12px;color:var(--muted);padding-top:8px;white-space:nowrap}.grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(330px,.96fr);gap:18px;align-items:start}.panel{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:17px}.panel h2{font-size:19px;line-height:1.25;margin:0}.panel h3{font-size:14px;margin:0 0 8px}.step{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:12px}.step b{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-size:12px}.field-label{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px;font-weight:700;margin:0 0 7px}.hint{font-size:12px;color:var(--muted);margin:7px 0 0}.textarea{width:100%;min-height:220px;resize:vertical;border:1px solid var(--line);border-radius:11px;background:#fff;padding:14px;color:var(--ink);outline:none}.textarea:focus,input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(23,107,85,.12)}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.btn{border:0;border-radius:9px;padding:10px 14px;font-weight:750;font-size:13px;transition:transform .12s,background .12s}.btn:active{transform:translateY(1px)}.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:#0e5945}.btn-soft{background:var(--green-2);color:var(--green)}.btn-light{background:#f1f0ea;color:var(--ink)}.btn-danger{background:var(--coral-2);color:var(--coral)}.btn:disabled{opacity:.45;cursor:not-allowed}.divider{height:1px;background:var(--line);margin:22px 0}.dropzone{border:1.5px dashed #aeb9af;border-radius:12px;padding:18px;text-align:center;background:#fbfcf8;transition:border-color .15s,background .15s}.dropzone.over{border-color:var(--green);background:var(--green-2)}.dropzone strong{display:block;font-size:13px}.dropzone span{display:block;color:var(--muted);font-size:12px;margin:4px 0 12px}.dropzone input{display:none}.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.preview{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#f1f1ed;aspect-ratio:4/3}.preview img{display:block;width:100%;height:100%;object-fit:cover}.preview figcaption{position:absolute;left:7px;bottom:7px;padding:3px 7px;border-radius:5px;background:rgba(23,33,29,.78);color:#fff;font-size:11px}.empty{display:grid;place-items:center;color:var(--muted);font-size:12px;min-height:130px;border:1px dashed var(--line);border-radius:10px;padding:12px;text-align:center}.extract{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.chip{padding:5px 8px;border-radius:6px;background:#f1f0ea;color:#46534b;font-size:12px}.chip b{color:var(--ink);margin-right:3px}.results{display:grid;gap:11px}.result{border:1px solid var(--line);border-radius:11px;padding:14px;background:#fff}.result.recommended{border-color:#a6cdbd;box-shadow:inset 3px 0 var(--green)}.result-title{display:flex;justify-content:space-between;gap:10px;align-items:start}.result-title strong{font-size:15px}.badge{border-radius:999px;padding:3px 7px;font-size:11px;font-weight:800;white-space:nowrap}.badge.high{color:var(--green);background:var(--green-2)}.badge.mid{color:var(--amber);background:var(--amber-2)}.badge.low{color:var(--coral);background:var(--coral-2)}.result p{margin:7px 0;color:var(--muted);font-size:12px}.result-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.result-actions .btn{font-size:12px;padding:8px 10px}.compare{margin-top:18px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.input{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;background:#fff;color:var(--ink);outline:none}.wide{grid-column:1/-1}.report{margin-top:13px;border-radius:10px;padding:12px;font-size:13px}.report.good{background:var(--green-2);color:#14513f}.report.warn{background:var(--amber-2);color:#795010}.report.neutral{background:#f1f0ea;color:#5f655f}.report ul{margin:7px 0 0 18px;padding:0}.saved{margin-top:18px}.saved-list{display:grid;gap:8px}.saved-item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 11px;background:#f7f6f0;border-radius:9px;font-size:12px}.saved-item span{color:var(--muted)}.mini-btn{border:0;background:transparent;color:var(--coral);font-weight:700;font-size:12px}.btn-big{width:100%;margin-top:10px;padding:13px;font-size:15px}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);max-width:90vw;background:#17211d;color:#fff;padding:10px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}.toast.show{opacity:1}.fields{margin-top:12px;border:1px solid var(--line);border-radius:10px;background:#fff}.fields summary{padding:10px 12px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer}.fields-body{padding:0 12px 12px}.chip.missing{background:transparent;border:1px dashed var(--line);color:var(--muted)}.checklist-box{margin-bottom:12px;border:1px solid #a6cdbd;border-radius:12px;padding:12px;background:#f6fbf8}.checklist-title{font-weight:800;font-size:13px;color:var(--green)}.checklist-box h4{margin:12px 0 0;font-size:12px;color:var(--muted)}.check{display:flex;gap:11px;align-items:center;padding:10px 12px;margin-top:7px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer}.check input{width:22px;height:22px;flex:none;accent-color:var(--green)}.check .lab{display:block;font-size:11px;color:var(--muted)}.check .ko{display:block;font-size:20px;font-weight:800;letter-spacing:.03em;line-height:1.3;color:var(--ink)}.check.on{border-color:var(--green);background:var(--green-2)}#confirmArea .report{margin-top:12px}.tip{margin-top:11px;padding:11px 12px;border-radius:10px;background:var(--green-2);color:#14513f;font-size:12px}.tip b{font-size:13px}.howto{margin-top:11px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:12px}.howto summary{padding:11px 12px;font-weight:750;font-size:13px;cursor:pointer;color:var(--green)}.howto[open] summary{border-bottom:1px solid var(--line)}.howto h4{margin:12px 12px 5px;font-size:12px}.howto ul,.howto ol{margin:0 12px 0 30px;padding:0;color:#46534b}.howto li{margin:3px 0}.howto .warn-line{margin:7px 12px 0;color:var(--coral)}.glossary{display:flex;flex-wrap:wrap;gap:6px;margin:0 12px 13px}.glossary span{padding:4px 7px;border-radius:6px;background:#f1f0ea;color:#46534b}.glossary b{color:var(--ink);margin-right:4px}.note{padding:11px 12px;border-left:3px solid var(--coral);background:var(--coral-2);color:#754233;font-size:12px;border-radius:0 8px 8px 0}.footer{margin-top:19px;text-align:center;color:var(--muted);font-size:11px}@media(max-width:800px){.shell{width:min(100% - 22px,600px);padding-top:19px}.topbar{margin-bottom:22px}.status{display:none}.grid{grid-template-columns:1fr}.panel{padding:17px}.textarea{min-height:180px}.compare-grid{grid-template-columns:1fr}.wide{grid-column:auto}.preview-grid{grid-template-columns:1fr 1fr}}@media(max-width:420px){.topbar{display:block}.brand{align-items:flex-start}.actions .btn{flex:1}.preview-grid{grid-template-columns:1fr}}
     .actions .btn-big{flex:1 1 100%}
   </style>
 </head>
@@ -22,7 +22,7 @@
         <div class="panel-head"><div><div class="step"><b>1</b>先贴上攻略</div><h2 style="margin-top:10px">地点线索</h2></div><button class="btn btn-light" id="sampleBtn">填入示例</button></div>
         <label class="field-label" for="guideText">攻略文字、网址、店名、地址或电话</label>
         <textarea class="textarea" id="guideText" placeholder="把攻略贴在这里（文字、网址、店名、地址、电话都可以）。想看示范，按右上角「填入示例」。"></textarea>
-        <div class="actions"><button class="btn btn-primary btn-big" id="pasteGuideBtn" style="margin-top:0">📋 贴上攻略并搜索</button><button class="btn btn-soft" id="searchBtn">生成 Naver Map 搜索</button><button class="btn btn-light" id="clearBtn">清空</button></div>
+        <div class="actions"><button class="btn btn-primary" id="searchBtn">生成 Naver Map 搜索</button><button class="btn btn-light" id="clearBtn">清空</button></div>
         <div class="extract" id="extract"><span class="chip">等待输入地点线索</span></div>
         <div class="divider"></div>
         <div class="step"><b>2</b>粘贴攻略照片或 Naver Map 截图</div>
@@ -31,24 +31,21 @@
         <p class="hint">图片只在当前浏览器内预览；刷新页面后不会自动保留。</p>
       </section>
       <section class="panel">
-        <div class="panel-head"><div><div class="step"><b>3</b>打开真正的地图</div><h2 style="margin-top:10px">候选地点</h2></div><span class="badge mid" id="resultState">尚未搜索</span></div>
-        <div class="results" id="results"><div class="empty">生成搜索链接后，这里会出现候选搜索词。<br>我们不读取 Naver Map 页面，只帮你打开官方搜索。</div></div>
-        <div id="pickHint"></div>
+        <div class="panel-head"><div><div class="step"><b>3</b>打开 Naver Map 对一对</div><h2 style="margin-top:10px">要找的那一家</h2></div><span class="badge mid" id="resultState">尚未搜索</span></div>
+        <div id="checklist"></div>
+        <div class="results" id="results"><div class="empty">生成搜索后，这里会列出要在 Naver Map 里对的韩文，<br>和打开 Naver Map 的按钮。</div></div>
+        <div id="confirmArea" hidden><div class="report neutral" id="checkVerdict"></div><button class="btn btn-primary btn-big" id="confirmBtn">✓ 是这家，存起来</button><p class="hint">列表里对不上？试试上面其他搜索按钮，或在 Naver 列表往下滑看别家。</p></div>
         <details class="howto" id="howto">
           <summary>看不懂韩文？Naver Map 操作说明</summary>
           <h4>怎么选对那一家</h4>
-          <ul><li>店名后面的「<b>○○점</b>」= ○○店，例如 성수점 = 圣水店、본점 = 本店。</li><li>灰色小字的「<b>○○구</b>」是区，选跟攻略区域一样的那家（上面会提示该选哪个区）。</li><li>只看名字不够，同名分店很多；一定要带地址或电话回来比对。</li></ul>
-          <h4>手机（Naver Map App）</h4>
-          <ol><li>点上面的「打开 Naver Map」，会跳进 App 的搜索结果。</li><li>点店名，进入店家页。</li><li>点地址那一行（📍图标）→ 展开后在 <b>도로명</b> 旁边按 <b>복사</b>。</li><li>切回这个网页，按「📋 贴上 Naver 复制的内容」就会自动比对。填过的内容会自动记住，切来切去不会丢。</li><li>想留链接：店家页按 <b>공유</b> → <b>복사</b>（或 링크 복사），回来再按一次「📋 贴上」。</li></ol>
-          <p class="warn-line">手机上直接点电话号码会拨号。电话可以不填，有地址就够比对了。</p>
-          <h4>电脑（网页版）</h4>
-          <ol><li>点蓝色店名，旁边会打开店家详情。</li><li>地址那行展开后按 <b>복사</b>；电话那行旁边也有 <b>복사</b>。</li><li>按 <b>공유</b> → <b>복사</b> 得到 naver.me 开头的链接。</li></ol>
+          <ul><li>店名后面的「<b>○○점</b>」= ○○店，例如 성수점 = 圣水店、본점 = 本店。</li><li>灰色小字的「<b>○○구</b>」是区，选跟攻略区域一样的那家。</li><li>只看名字不够，同名分店很多；最好对上门牌号或电话。</li></ul>
+          <h4>怎么对（手机、电脑都一样）</h4>
+          <ol><li>先看一眼上面「要找的」大字韩文。不用看懂，对形状就好。</li><li>点「打开 Naver Map」，在搜索列表里找：店名、灰色地址跟清单一样的那家。</li><li>点进店家页，看门牌号、电话跟清单一不一样（数字最好对）。</li><li>回到这个网页，把对上的打勾，按「✓ 是这家，存起来」。</li></ol>
+          <p class="warn-line">手机上直接点 Naver 里的电话号码会拨号，用眼睛看就好。</p>
           <h4>常见韩文</h4>
           <div class="glossary"><span><b>복사</b>复制</span><span><b>공유</b>分享</span><span><b>주소</b>地址</span><span><b>도로명</b>道路名地址（选这个）</span><span><b>지번</b>旧地址</span><span><b>전화</b>电话</span><span><b>점</b>店 / 分店</span><span><b>본점</b>本店</span><span><b>영업 중</b>营业中</span><span><b>영업 종료</b>已打烊</span><span><b>휴무</b>公休</span><span><b>저장</b>收藏</span><span><b>출발</b>出发</span><span><b>도착</b>到达</span><span><b>리뷰</b>评价</span><span><b>메뉴</b>菜单</span></div>
         </details>
-        <div class="divider"></div>
-        <div class="step"><b>4</b>把 Naver Map 结果带回来</div>
-        <div class="compare">
+        <details class="fields" id="advancedBox"><summary>进阶：贴上 Naver 资料自动比对、放截图对照</summary><div class="fields-body compare">
           <button class="btn btn-primary btn-big" id="quickPasteBtn">📋 贴上 Naver 复制的内容</button>
           <p class="hint">在 Naver Map 店家页复制<b>地址</b>（或电话、分享链接）后，回来按这个按钮就好。可以连续贴好几样，工具会自动分辨、自动比对。</p>
           <textarea class="input" id="quickBox" rows="2" style="margin-top:8px;resize:none" placeholder="按钮不能用时：长按这里，选「粘贴」"></textarea>
@@ -61,7 +58,7 @@
           <div class="actions"><button class="btn btn-light" id="compareBtn">重新比对</button><button class="btn btn-light" id="saveBtn" disabled>保存已确认地点</button></div>
           <div class="dropzone" id="mapDropzone" tabindex="0" style="margin-top:12px"><strong>粘贴 Naver Map 地点截图</strong><span>电脑：点这里后按 Ctrl / Cmd + V；手机：点下面按钮从相册选</span><label class="btn btn-soft" for="mapImageInput">选择图片<input id="mapImageInput" type="file" accept="image/*" multiple></label></div>
           <div class="preview-grid" id="mapPreviews"><div class="empty">地图截图会显示在这里</div></div>
-                  </div>
+        </div></details>
         <div class="saved"><div class="panel-head" style="margin-bottom:9px"><h3>已确认清单</h3><button class="mini-btn" id="clearSaved">清除清单</button></div><div class="saved-list" id="savedList"><div class="empty" style="min-height:70px">还没有保存地点</div></div></div>
         <div class="note" style="margin-top:16px">照片比对的正式视觉识别需要 OCR / 视觉模型；这个免费原型先保留两边截图，方便你并排核对，不会假装给出不可靠的“相似度”。</div>
       </section>
@@ -139,24 +136,60 @@
     if(!qs.length && t.query) qs.push({q:t.query,label:'推荐搜索'});
     const seen=new Set(); return qs.filter(x=>!seen.has(x.q)&&seen.add(x.q)).slice(0,4);
   }
-  const EMPTY_RESULTS='<div class="empty">生成搜索链接后，这里会出现候选搜索词。<br>我们不读取 Naver Map 页面，只帮你打开官方搜索。</div>';
+  const EMPTY_RESULTS='<div class="empty">生成搜索后，这里会列出要在 Naver Map 里对的韩文，<br>和打开 Naver Map 的按钮。</div>';
   function generate(){
     const text=$('guideText').value.trim(); if(!text){$('guideText').focus();return}
     const t=renderExtract(); state.lastQuery=t.query; state.lastResult=t;
     const qs=buildQueries(t);
     $('resultState').textContent=qs.length+' 个搜索入口'; $('resultState').className='badge high';
-    $('results').innerHTML=qs.map((x,i)=>`<article class="result ${i===0?'recommended':''}"><div class="result-title"><strong>${escapeHtml(x.q)}</strong><span class="badge ${i===0?'high':'mid'}">${escapeHtml(x.label)}</span></div><p>打开 Naver Map 官方搜索结果，在里面点进真正的地点详情页，再复制分享链接、地址和电话回来。</p><div class="result-actions"><a class="btn btn-primary" target="_blank" rel="noopener" href="${searchLink(x.q)}">打开 Naver Map</a><button class="btn btn-light" data-copy="${escapeHtml(searchLink(x.q))}">复制链接</button></div></article>`).join('');
+    $('results').innerHTML=qs.map((x,i)=>`<article class="result ${i===0?'recommended':''}"><div class="result-title"><strong>${escapeHtml(x.q)}</strong><span class="badge ${i===0?'high':'mid'}">${escapeHtml(x.label)}</span></div><p>打开 Naver Map 搜索结果，找跟上面清单一样的那家，对上的回来打勾。</p><div class="result-actions"><a class="btn btn-primary" target="_blank" rel="noopener" href="${searchLink(x.q)}">打开 Naver Map</a><button class="btn btn-light" data-copy="${escapeHtml(searchLink(x.q))}">复制链接</button></div></article>`).join('');
     $('results').querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>navigator.clipboard?.writeText(b.dataset.copy));
-    $('pickHint').innerHTML=pickHintHtml(t); state.generated=true; saveDraft();
+    renderChecklist(t); state.generated=true; saveDraft();
   }
-  // 告诉看不懂韩文的用户：搜索结果里该点哪一家
-  function pickHintHtml(t){
-    const lines=[];
-    if(t.areas[0]){const a=t.areas[0]; const where=a.gus.length?a.gus.map(g=>`<b>${g}</b>`).join(' 或 '):`<b>${a.city}</b>`; lines.push(`攻略说「${escapeHtml(a.keys[0])}」→ 选店名里有 <b>${a.ko}</b>（如 ${a.ko}점），或灰色地址在 ${where} 的那家。`);}
-    if(t.branch) lines.push(`攻略写的是本店 → 选店名带 <b>${escapeHtml(t.branch)}</b> 的那家。`);
-    if(!lines.length) lines.push('店名后面「○○점」= ○○店；看灰色小字的区（○○구）跟攻略对不对得上。');
-    lines.push('点进店家页，复制<b>地址</b>（或电话），回来按「📋 贴上 Naver 复制的内容」。');
-    return `<div class="tip"><b>怎么选：</b>${lines.join('<br>')}</div>`;
+  // 对照清单：列出要在 Naver Map 里用眼睛对的韩文，不用复制贴上
+  function buildChecks(t){
+    const list=[]; const a=t.areas[0];
+    const koName=t.names.find(n=>scriptOf(n)==='ko');
+    const gu=t.addr.gu||(a&&a.gus.join(' / '))||(a&&a.city!=='서울'?a.city:'');
+    // 攻略常写「연남동 소이연남」，Naver 上只显示「소이연남」：去掉开头的洞名 / 站名
+    let shown=stripBranch(koName||'')||koName||''; const rest=shown.replace(/^[가-힣0-9]+(?:동|구|역|가)\s+/,'');
+    if(rest.length>=2&&!/^(카페|맛집|식당|술집|빵집|베이커리)$/.test(rest)) shown=rest;
+    if(koName) list.push({k:'name',strong:false,where:'list',label:'店名',ko:shown});
+    if(t.branch) list.push({k:'branch',strong:false,where:'list',label:'分店名',ko:t.branch});
+    if(gu) list.push({k:'gu',strong:false,where:'list',label:'灰色地址里有'+(gu.includes('/')?'（其中一个）':''),ko:gu});
+    if(t.addr.road) list.push({k:'addr',strong:true,where:'detail',label:'门牌',ko:t.addr.road});
+    else if(t.addr.lot) list.push({k:'addr',strong:true,where:'detail',label:'旧地址（点地址展开才看得到）',ko:t.addr.lot});
+    if(t.phones[0]) list.push({k:'phone',strong:true,where:'detail',label:'电话',ko:fmtPhone(t.phones[0])});
+    return list;
+  }
+  function renderChecklist(t){
+    const items=buildChecks(t); state.checkItems=items; state.checkTerms=t;
+    const row=(x,i)=>`<label class="check"><input type="checkbox" data-check="${i}"><span><span class="lab">${escapeHtml(x.label)}</span><span class="ko">${escapeHtml(x.ko)}</span></span></label>`;
+    const group=(where,title)=>{const g=items.map((x,i)=>[x,i]).filter(([x])=>x.where===where); return g.length?`<h4>${title}</h4>${g.map(([x,i])=>row(x,i)).join('')}`:''};
+    let html=group('list','① 在搜索列表就看得到')+group('detail','② 点进店家页再确认（最准）');
+    if(t.name&&!t.names.some(n=>scriptOf(n)==='ko')) html+=`<p class="hint">攻略店名是「${escapeHtml(t.name)}」，Naver 上通常写成韩文，名字对不上没关系，看地址和电话。</p>`;
+    if(!items.length) html=`<p class="hint">攻略里没有地址、电话或区域，只能靠招牌判断：可以在左边放攻略照片，打开 Naver 后对门头。</p>`;
+    $('checklist').innerHTML=`<div class="checklist-box"><div class="checklist-title">先记住要找的（不用看懂，对形状就好）</div>${html}</div>`;
+    $('checklist').querySelectorAll('[data-check]').forEach(c=>c.onchange=()=>{c.closest('.check').classList.toggle('on',c.checked);updateCheckVerdict();saveDraft()});
+    $('confirmArea').hidden=false; updateCheckVerdict();
+  }
+  function checkedIndexes(){return [...$('checklist').querySelectorAll('[data-check]')].filter(c=>c.checked).map(c=>+c.dataset.check)}
+  function updateCheckVerdict(){
+    const items=state.checkItems||[], on=checkedIndexes().map(i=>items[i]), weak=items.filter(x=>!x.strong);
+    let cls='neutral',msg='在 Naver 里看到一样的，就在上面打勾。';
+    if(on.some(x=>x.strong)){cls='good';msg='✓ 门牌或电话对上了，就是这家。'}
+    else if(on.length&&on.length===weak.length&&!items.some(x=>x.strong)){cls='good';msg='✓ 都对上了，可以存起来。'}
+    else if(on.length&&on.length===weak.length){msg='列表上的都对上了，大概率是这家；方便的话点进去再看门牌或电话。'}
+    else if(on.length){msg='有一部分对上了，再看看其他几项。'}
+    else if(!items.length){msg='没有可以对的韩文，看招牌觉得是就存起来。'}
+    $('checkVerdict').className='report '+cls; $('checkVerdict').textContent=msg; state.checkVerdict=cls;
+  }
+  function confirmSave(){
+    const t=state.checkTerms; if(!t) return;
+    const name=t.names.join(' / ')||t.query||'未命名地点';
+    const best=t.phones[0]?fmtPhone(t.phones[0]):t.name?(t.name+(t.areas[0]&&!t.name.includes(t.areas[0].ko)?' '+t.areas[0].ko:'')):(t.address||name);
+    pushSaved({name,address:t.address||'',link:safeLink($('naverLink').value.trim(),best),verdict:state.checkVerdict==='good'?'good':'neutral',at:new Date().toLocaleString('zh-CN')});
+    toast('已存到清单 ✓');
   }
   // 快速填写：读剪贴板，自动分辨链接 / 电话 / 地址 / 店名
   let toastTimer;
@@ -194,22 +227,21 @@
     const btn=$('saveBtn'); btn.disabled=true; btn.textContent='保存已确认地点'; btn.className='btn btn-light';
     state.mapImages=[]; renderImages('mapImages'); state.verdict=''; updateQuickStatus();
   }
-  function startNewPlace(){ resetMapSide(); generate(); $('results').scrollIntoView({behavior:'smooth',block:'start'}); }
-  async function pasteGuide(){
-    const text=await readClipboard();
-    if(!text||!text.trim()){toast('读不到剪贴板：请长按攻略输入框，选「粘贴」');$('guideText').focus();return}
-    $('guideText').value=text.trim(); startNewPlace();
-  }
+  function startNewPlace(){ resetMapSide(); generate(); $('checklist').scrollIntoView({behavior:'smooth',block:'start'}); }
   // 手机在 Naver Map App 和浏览器之间切换时，页面可能被重新载入：自动记住填过的内容
   const DRAFT_FIELDS=['guideText','naverLink','placeName','placePhone','placeAddress'];
-  function saveDraft(){const d={generated:!!state.generated};DRAFT_FIELDS.forEach(id=>d[id]=$(id).value);localStorage.setItem('koreaPlaceDraft',JSON.stringify(d))}
+  function saveDraft(){const d={generated:!!state.generated,checks:state.generated?checkedIndexes():[]};DRAFT_FIELDS.forEach(id=>d[id]=$(id).value);localStorage.setItem('koreaPlaceDraft',JSON.stringify(d))}
   function loadDraft(){
     let d=null; try{d=JSON.parse(localStorage.getItem('koreaPlaceDraft')||'null')}catch(e){} if(!d) return;
     DRAFT_FIELDS.forEach(id=>{if(d[id]) $(id).value=d[id]});
-    if(d.generated&&$('guideText').value.trim()) generate();
+    if(d.generated&&$('guideText').value.trim()){
+      generate();
+      (d.checks||[]).forEach(i=>{const c=$('checklist').querySelector(`[data-check="${i}"]`); if(c){c.checked=true;c.closest('.check').classList.add('on')}});
+      updateCheckVerdict(); saveDraft();
+    }
     if(d.placeName||d.placePhone||d.placeAddress) compare();
   }
-  $('pasteGuideBtn').onclick=pasteGuide; $('quickPasteBtn').onclick=quickPaste;
+  $('quickPasteBtn').onclick=quickPaste; $('confirmBtn').onclick=confirmSave;
   $('guideText').addEventListener('paste',()=>{const wasEmpty=!$('guideText').value.trim(); setTimeout(()=>{if(wasEmpty&&$('guideText').value.trim()) startNewPlace()},0)});
   $('quickBox').addEventListener('paste',()=>setTimeout(()=>{const b=$('quickBox'); if(!absorb(b.value)) toast('没认出地址、电话或链接，请展开下面手动填写'); b.value=''},0));
   ['placeName','placePhone','placeAddress','naverLink'].forEach(id=>$(id).addEventListener('input',()=>{updateQuickStatus(); if($('placeName').value||$('placePhone').value||$('placeAddress').value) compare()}));
@@ -284,9 +316,10 @@
     btn.textContent=r.verdict==='warn'?'仍要保存（有冲突）':'保存已确认地点'; btn.className='btn '+(r.verdict==='warn'?'btn-danger':r.verdict==='good'?'btn-soft':'btn-light');
   }
   const VERDICT_BADGE={good:['high','一致'],warn:['low','有冲突'],neutral:['mid','证据不够']};
-  function save(){const name=$('placeName').value.trim()||state.lastResult?.guide.query||'未命名地点';const item={name,address:$('placeAddress').value.trim(),link:safeLink($('naverLink').value.trim(),name),verdict:state.verdict||'neutral',at:new Date().toLocaleString('zh-CN')};const list=JSON.parse(localStorage.getItem('koreaPlaceChecks')||'[]');list.unshift(item);localStorage.setItem('koreaPlaceChecks',JSON.stringify(list.slice(0,30)));renderSaved()}
+  function save(){const name=$('placeName').value.trim()||state.lastResult?.guide.query||'未命名地点';pushSaved({name,address:$('placeAddress').value.trim(),link:safeLink($('naverLink').value.trim(),name),verdict:state.verdict||'neutral',at:new Date().toLocaleString('zh-CN')})}
+  function pushSaved(item){const list=JSON.parse(localStorage.getItem('koreaPlaceChecks')||'[]');list.unshift(item);localStorage.setItem('koreaPlaceChecks',JSON.stringify(list.slice(0,30)));renderSaved()}
   function renderSaved(){const list=JSON.parse(localStorage.getItem('koreaPlaceChecks')||'[]');$('savedList').innerHTML=list.length?list.map((x,i)=>{const v=VERDICT_BADGE[x.verdict];return `<div class="saved-item"><div><b>${escapeHtml(x.name)}</b>${v?` <span class="badge ${v[0]}">${v[1]}</span>`:''}<br><span>${escapeHtml(x.address||'未填写地址')}</span></div><div><a class="mini-btn" href="${escapeHtml(safeLink(x.link,x.name))}" target="_blank" rel="noopener">打开</a> <button class="mini-btn" data-remove="${i}">删除</button></div></div>`}).join(''):'<div class="empty" style="min-height:70px">还没有保存地点</div>'; $('savedList').querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{const a=JSON.parse(localStorage.getItem('koreaPlaceChecks')||'[]');a.splice(Number(b.dataset.remove),1);localStorage.setItem('koreaPlaceChecks',JSON.stringify(a));renderSaved()})}
-  $('guideText').addEventListener('input',renderExtract); DRAFT_FIELDS.forEach(id=>$(id).addEventListener('input',saveDraft)); $('searchBtn').onclick=generate; $('sampleBtn').onclick=()=>{$('guideText').value=sample;renderExtract();saveDraft()}; $('clearBtn').onclick=()=>{$('guideText').value='';renderExtract();$('results').innerHTML=EMPTY_RESULTS;$('pickHint').innerHTML='';$('resultState').textContent='尚未搜索';$('resultState').className='badge mid';state.generated=false;resetMapSide();saveDraft()}; $('imageInput').onchange=e=>{addImages(e.target.files,'guideImages');e.target.value=''}; $('mapImageInput').onchange=e=>{addImages(e.target.files,'mapImages');e.target.value=''}; setupPaste($('dropzone'),'guideImages'); setupPaste($('mapDropzone'),'mapImages'); $('compareBtn').onclick=compare; $('saveBtn').onclick=save; $('clearSaved').onclick=()=>{localStorage.removeItem('koreaPlaceChecks');renderSaved()}; renderExtract();renderSaved();loadDraft();updateQuickStatus();
+  $('guideText').addEventListener('input',renderExtract); DRAFT_FIELDS.forEach(id=>$(id).addEventListener('input',saveDraft)); $('searchBtn').onclick=generate; $('sampleBtn').onclick=()=>{$('guideText').value=sample;renderExtract();saveDraft()}; $('clearBtn').onclick=()=>{$('guideText').value='';renderExtract();$('results').innerHTML=EMPTY_RESULTS;$('checklist').innerHTML='';$('confirmArea').hidden=true;state.checkItems=[];state.checkTerms=null;$('resultState').textContent='尚未搜索';$('resultState').className='badge mid';state.generated=false;resetMapSide();saveDraft()}; $('imageInput').onchange=e=>{addImages(e.target.files,'guideImages');e.target.value=''}; $('mapImageInput').onchange=e=>{addImages(e.target.files,'mapImages');e.target.value=''}; setupPaste($('dropzone'),'guideImages'); setupPaste($('mapDropzone'),'mapImages'); $('compareBtn').onclick=compare; $('saveBtn').onclick=save; $('clearSaved').onclick=()=>{localStorage.removeItem('koreaPlaceChecks');renderSaved()}; renderExtract();renderSaved();loadDraft();updateQuickStatus();
 </script>
 </body>
 </html>
